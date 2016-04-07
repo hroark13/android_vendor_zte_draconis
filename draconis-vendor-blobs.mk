@@ -19,8 +19,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/zte/draconis/proprietary/bin/bridgemgrd:system/bin/bridgemgrd \
     vendor/zte/draconis/proprietary/bin/bt_ssp_debug_mode.sh:system/bin/bt_ssp_debug_mode.sh \
-    vendor/zte/draconis/proprietary/bin/bt_testmode.sh:system/bin/bt_testmode.sh \
     vendor/zte/draconis/proprietary/bin/bt_testmode_new.sh:system/bin/bt_testmode_new.sh \
+    vendor/zte/draconis/proprietary/bin/bt_testmode.sh:system/bin/bt_testmode.sh \
     vendor/zte/draconis/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/zte/draconis/proprietary/bin/charger_monitor.sh:system/bin/charger_monitor.sh \
     vendor/zte/draconis/proprietary/bin/cnd:system/bin/cnd \
@@ -28,7 +28,9 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/bin/fingerprintd:system/bin/fingerprintd \
     vendor/zte/draconis/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/zte/draconis/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
+    vendor/zte/draconis/proprietary/bin/gsensor_test:system/bin/gsensor_test \
     vendor/zte/draconis/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
+    vendor/zte/draconis/proprietary/bin/gyrosensor_test:system/bin/gyrosensor_test \
     vendor/zte/draconis/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/zte/draconis/proprietary/bin/init.btprop.sh:system/bin/init.btprop.sh \
     vendor/zte/draconis/proprietary/bin/irsc_util:system/bin/irsc_util \
@@ -38,11 +40,12 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/bin/mm-qcamera-app:system/bin/mm-qcamera-app \
     vendor/zte/draconis/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/zte/draconis/proprietary/bin/mpdecision:system/bin/mpdecision \
+    vendor/zte/draconis/proprietary/bin/msensor_test:system/bin/msensor_test \
     vendor/zte/draconis/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/zte/draconis/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/zte/draconis/proprietary/bin/qcom-system-daemon:system/bin/qcom-system-daemon \
-    vendor/zte/draconis/proprietary/bin/qemud:system/bin/qemud \
     vendor/zte/draconis/proprietary/bin/qemu-props:system/bin/qemu-props \
+    vendor/zte/draconis/proprietary/bin/qemud:system/bin/qemud \
     vendor/zte/draconis/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/zte/draconis/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/zte/draconis/proprietary/bin/quipc_igsn:system/bin/quipc_igsn \
@@ -109,9 +112,9 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/etc/flp.conf:system/etc/flp.conf \
     vendor/zte/draconis/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/zte/draconis/proprietary/etc/hcidump.sh:system/etc/hcidump.sh \
+    vendor/zte/draconis/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     vendor/zte/draconis/proprietary/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
     vendor/zte/draconis/proprietary/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
-    vendor/zte/draconis/proprietary/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     vendor/zte/draconis/proprietary/etc/hsic.control.bt.sh:system/etc/hsic.control.bt.sh \
     vendor/zte/draconis/proprietary/etc/init.ath3k.bt.sh:system/etc/init.ath3k.bt.sh \
     vendor/zte/draconis/proprietary/etc/init.crda.sh:system/etc/init.crda.sh \
@@ -136,6 +139,12 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/etc/nv-conf.xml:system/etc/nv-conf.xml \
     vendor/zte/draconis/proprietary/etc/permissions/android.hardwardware.sensor.gyroscope.xml:system/etc/permissions/android.hardwardware.sensor.gyroscope.xml \
     vendor/zte/draconis/proprietary/etc/permissions/android.hardware.compass.xml:system/etc/permissions/android.hardware.compass.xml \
+    vendor/zte/draconis/proprietary/etc/permissions/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
+    vendor/zte/draconis/proprietary/etc/permissions/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
+    vendor/zte/draconis/proprietary/etc/permissions/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
+    vendor/zte/draconis/proprietary/etc/permissions/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
+    vendor/zte/draconis/proprietary/etc/permissions/android.hardware.sensor.stepcounter.xml:system/etc/permissions/android.hardware.sensor.stepcounter.xml \
+    vendor/zte/draconis/proprietary/etc/permissions/android.hardware.sensor.stepdetector.xml:system/etc/permissions/android.hardware.sensor.stepdetector.xml \
     vendor/zte/draconis/proprietary/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
     vendor/zte/draconis/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/zte/draconis/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
@@ -146,8 +155,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/zte/draconis/proprietary/etc/sec_config:system/etc/sec_config \
     vendor/zte/draconis/proprietary/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
-    vendor/zte/draconis/proprietary/etc/snd_soc_msm/snd_soc_msm_Tapan:system/etc/snd_soc_msm/snd_soc_msm_Tapan \
     vendor/zte/draconis/proprietary/etc/snd_soc_msm/snd_soc_msm_Tapan_SKUF:system/etc/snd_soc_msm/snd_soc_msm_Tapan_SKUF \
+    vendor/zte/draconis/proprietary/etc/snd_soc_msm/snd_soc_msm_Tapan:system/etc/snd_soc_msm/snd_soc_msm_Tapan \
     vendor/zte/draconis/proprietary/etc/snd_soc_msm/snd_soc_msm_TapanLite:system/etc/snd_soc_msm/snd_soc_msm_TapanLite \
     vendor/zte/draconis/proprietary/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
     vendor/zte/draconis/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
@@ -156,8 +165,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/etc/wfdconfig800_480.xml:system/etc/wfdconfig800_480.xml \
     vendor/zte/draconis/proprietary/etc/wfdconfig960_540.xml:system/etc/wfdconfig960_540.xml \
     vendor/zte/draconis/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
-    vendor/zte/draconis/proprietary/etc/wifi/p2p_supplicant.conf:system/etc/wifi/p2p_supplicant.conf \
     vendor/zte/draconis/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    vendor/zte/draconis/proprietary/etc/wifi/p2p_supplicant.conf:system/etc/wifi/p2p_supplicant.conf \
     vendor/zte/draconis/proprietary/etc/wifi/wifi_config.xml:system/etc/wifi/wifi_config.xml \
     vendor/zte/draconis/proprietary/etc/wifi/wpa_supplicant_ath6kl.conf:system/etc/wifi/wpa_supplicant_ath6kl.conf \
     vendor/zte/draconis/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
@@ -177,10 +186,10 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/zte/draconis/proprietary/lib/libloc_xtra.so:system/lib/libloc_xtra.so \
     vendor/zte/draconis/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
-    vendor/zte/draconis/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
-    vendor/zte/draconis/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/zte/draconis/proprietary/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
     vendor/zte/draconis/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
+    vendor/zte/draconis/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
+    vendor/zte/draconis/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/zte/draconis/proprietary/lib/libmorpho_groupshot.so:system/lib/libmorpho_groupshot.so \
     vendor/zte/draconis/proprietary/lib/libmorpho_jpeg_io.so:system/lib/libmorpho_jpeg_io.so \
     vendor/zte/draconis/proprietary/lib/libmorpho_memory_allocator.so:system/lib/libmorpho_memory_allocator.so \
@@ -208,6 +217,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/zte/draconis/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/zte/draconis/proprietary/vendor/lib/hw/sensors.msm8226.so:system/vendor/lib/hw/sensors.msm8226.so \
+    vendor/zte/draconis/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
     vendor/zte/draconis/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/zte/draconis/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
     vendor/zte/draconis/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
@@ -228,12 +238,12 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_common.so:system/vendor/lib/libchromatix_imx135_common.so \
     vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_default_video.so:system/vendor/lib/libchromatix_imx135_default_video.so \
     vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_hfr_120.so:system/vendor/lib/libchromatix_imx135_hfr_120.so \
-    vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_preview.so:system/vendor/lib/libchromatix_imx135_preview.so \
     vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_preview_enhance.so:system/vendor/lib/libchromatix_imx135_preview_enhance.so \
     vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_preview_normal.so:system/vendor/lib/libchromatix_imx135_preview_normal.so \
-    vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:system/vendor/lib/libchromatix_imx135_snapshot.so \
+    vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_preview.so:system/vendor/lib/libchromatix_imx135_preview.so \
     vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_snapshot_enhance.so:system/vendor/lib/libchromatix_imx135_snapshot_enhance.so \
     vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_snapshot_normal.so:system/vendor/lib/libchromatix_imx135_snapshot_normal.so \
+    vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_snapshot.so:system/vendor/lib/libchromatix_imx135_snapshot.so \
     vendor/zte/draconis/proprietary/vendor/lib/libchromatix_imx135_video_hd.so:system/vendor/lib/libchromatix_imx135_video_hd.so \
     vendor/zte/draconis/proprietary/vendor/lib/libchromatix_karr_ar0542_common.so:system/vendor/lib/libchromatix_karr_ar0542_common.so \
     vendor/zte/draconis/proprietary/vendor/lib/libchromatix_karr_ar0542_default_video.so:system/vendor/lib/libchromatix_karr_ar0542_default_video.so \
@@ -292,7 +302,6 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/vendor/lib/libHevcSwDecoder.so:system/vendor/lib/libHevcSwDecoder.so \
     vendor/zte/draconis/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/zte/draconis/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/zte/draconis/proprietary/vendor/lib/lib-imscamera.so:system/vendor/lib/lib-imscamera.so \
     vendor/zte/draconis/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/zte/draconis/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/zte/draconis/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
@@ -301,6 +310,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
     vendor/zte/draconis/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/zte/draconis/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+    vendor/zte/draconis/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/zte/draconis/proprietary/vendor/lib/libmmcamera_ar0542.so:system/vendor/lib/libmmcamera_ar0542.so \
     vendor/zte/draconis/proprietary/vendor/lib/libmmcamera_faceproc.so:system/vendor/lib/libmmcamera_faceproc.so \
     vendor/zte/draconis/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:system/vendor/lib/libmmcamera_hdr_gb_lib.so \
@@ -329,7 +339,6 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
     vendor/zte/draconis/proprietary/vendor/lib/libmmcamera2_vpe_module.so:system/vendor/lib/libmmcamera2_vpe_module.so \
     vendor/zte/draconis/proprietary/vendor/lib/libmmcamera2_wnr_module.so:system/vendor/lib/libmmcamera2_wnr_module.so \
-    vendor/zte/draconis/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/zte/draconis/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/zte/draconis/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/zte/draconis/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
@@ -342,16 +351,16 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/zte/draconis/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
     vendor/zte/draconis/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
-    vendor/zte/draconis/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
+    vendor/zte/draconis/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
-    vendor/zte/draconis/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
+    vendor/zte/draconis/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/zte/draconis/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
@@ -361,8 +370,8 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/zte/draconis/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/zte/draconis/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
-    vendor/zte/draconis/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/zte/draconis/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
+    vendor/zte/draconis/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/zte/draconis/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
     vendor/zte/draconis/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/zte/draconis/proprietary/vendor/lib/libscve.so:system/vendor/lib/libscve.so \
@@ -387,6 +396,7 @@ PRODUCT_COPY_FILES += \
     vendor/zte/draconis/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so \
     vendor/zte/draconis/proprietary/vendor/lib/rfsa/adsp/libadsp_denoise_skel.so:system/vendor/lib/rfsa/adsp/libadsp_denoise_skel.so \
     vendor/zte/draconis/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
-    vendor/zte/draconis/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/zte/draconis/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
+    vendor/zte/draconis/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
+
 
