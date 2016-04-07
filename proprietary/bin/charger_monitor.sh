@@ -39,9 +39,6 @@ case "$name" in
 	"P892A12")
 		/system/bin/charger_monitor qpnp_charger 300000 0
 		;;
-        "P892U12")
-                /system/bin/charger_monitor qpnp_charger 300000 0
-                ;;
 	*)
 		/system/bin/charger_monitor qpnp_charger 400000 50
 		;;

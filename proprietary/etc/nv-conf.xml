@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** 2012 ,ZTE
+** this xml file used for nv configuartion in eng version
+*/
+-->
+
+<nvs>
+
+	<nv nvItem="905">
+		<dataSize>2</dataSize>
+		<data>0,0</data>
+	</nv>	
+	
+	<nv nvItem="4399">
+		<dataSize>1</dataSize>
+		<data>1</data>
+	</nv>	
+	
+	<nv nvItem="1892">
+		<dataSize>1</dataSize>
+		<data>5</data>
+	</nv>	
+	
+	<nv nvItem="1895">
+		<dataSize>1</dataSize>
+		<data>-1</data>
+	</nv>	
+	
+	<nv nvItem="1027">
+		<dataSize>1</dataSize>
+		<data>1</data>
+	</nv>		
+	
+</nvs>
